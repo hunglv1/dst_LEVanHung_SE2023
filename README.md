@@ -1,5 +1,4 @@
 # dst_exam_LEVanHung_SE2023
-This is a fork of LE Van Hung, store source code for dst exam
 
 This Airflow DAG retrieves data from the OpenSky and OpenMeteo APIs, performs data transformation, and writes the transformed data to a SQLite database.
 

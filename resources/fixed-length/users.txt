@@ -1,3 +1,0 @@
-0001Pierre                    Paris                         EPITA                         
-0002Ada                       London                        Home                          
-0003Margaret                  Boston                        MIT                           

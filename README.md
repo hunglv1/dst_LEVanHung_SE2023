@@ -18,6 +18,7 @@ The DAG consists of the following tasks:
 ## Prerequisites
 1. Airflow should be properly installed and configured.
 2. The SQLite database should be set up with the necessary tables (see the task 'create_flight_table').
+3. Run "docker compose up airflow-init" to set-up environments
 
 ## Configuration
 The DAG can be configured using the 'default_args' configuration in the DAG file ('handle_server_data.py'). The following configuration options are available:

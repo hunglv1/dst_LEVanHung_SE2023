@@ -17,10 +17,10 @@ The DAG consists of the following tasks:
 
 ## Prerequisites
 1. Airflow should be properly installed and configured.
-2. The SQLite database should be set up with the necessary tables.
+2. The SQLite database should be set up with the necessary tables (see the task 'create_flight_table').
 
 ## Configuration
-The DAG can be configured using the 'default_args' configuration in the DAG file ('hunglv_dag.py'). The following configuration options are available:
+The DAG can be configured using the 'default_args' configuration in the DAG file ('handle_server_data.py'). The following configuration options are available:
 
 - 'start_date': The start date for the DAG. By default, it is set to 'days_ago(1)'.
 - 'schedule_interval': The schedule interval for the DAG. By default, it is set to run at 1 AM every day.
@@ -28,13 +28,11 @@ The DAG can be configured using the 'default_args' configuration in the DAG file
 - 'owner': The owner of the DAG.
 
 ## Usage
-1. Place the DAG file ('hunglv_dag.py') in the Airflow DAGs folder.
-2. Update the necessary configurations in the DAG file, such as the SQLite database path and API credentials.
-3. Set up the SQLite database with the required tables.
+1. Place the DAG file ('handle_server_data.py') in the Airflow dags folder.
+2. Update the necessary configurations in the DAG file, such as tag id, schedule, owner...
+3. Set up the SQLite database with the required information on Airflow (the SQLite database path, use 'sqlite_default' connection id)
 4. Start the Airflow scheduler and webserver.
 5. The DAG will be automatically scheduled and executed based on the specified schedule interval.
-
-For more information on how to use Airflow, refer to the Airflow documentation.
 
 ## License
 HungLV
